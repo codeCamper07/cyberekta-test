@@ -1,0 +1,13 @@
+.paper-style {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-image: linear-gradient(to right, #3e0ac3, #ae89e4, #8e70b9);
+}
+.paper-style .para {
+  color: aliceblue;
+  text-align: center;
+}
