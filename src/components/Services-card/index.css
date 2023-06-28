@@ -1,0 +1,23 @@
+.service-images {
+  width: 50%;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+.card {
+  border-width: 1px;
+  box-shadow: 5px 5px 10px 10px rgb(183, 181, 181);
+  width: 550px;
+  height: 280px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  display: flex;
+}
+
+.effect:hover {
+  transform: scale(1.12);
+  box-shadow: 5px 5px 15px 10px rgb(88, 87, 87);
+}
+
+.card-content {
+  padding-left: 10px;
+}

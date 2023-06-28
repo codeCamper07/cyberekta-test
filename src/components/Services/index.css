@@ -18,3 +18,12 @@
 .main-banner :nth-child(3) {
   text-align: center;
 }
+.services-offered-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}

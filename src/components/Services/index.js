@@ -1,19 +1,28 @@
 import { Component } from 'react'
+import Footer from '../Footer'
 import './index.css'
 import Header from '../Header'
 import { Button } from '@mui/material'
+import image from '../../assets/Ransomware.jpeg'
+import ServicesCard from '../Services-card'
 
 const ServicesList = [
   {
+    id: 1,
     name: 'Application Security',
+    img: `${image}`,
     description: 'Content',
   },
   {
+    id: 2,
     name: 'Network Security',
+    img: `${image}`,
     description: 'Content',
   },
   {
+    id: 3,
     name: 'CERT-In Audit Services',
+    img: `${image}`,
     description: 'Content',
   },
 ]
@@ -37,8 +46,13 @@ class Services extends Component {
               <Button variant='contained'>Contact us</Button>
             </div>
           </div>
-          <div className='services-offered-section'></div>
+          <div className='services-offered-section'>
+            {ServicesList.map((eachItem) => (
+              <ServicesCard key={eachItem.id} cont={eachItem} />
+            ))}
+          </div>
         </div>
+        <Footer />
       </div>
     )
   }
