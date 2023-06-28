@@ -3,26 +3,25 @@ import Footer from '../Footer'
 import './index.css'
 import Header from '../Header'
 import { Button } from '@mui/material'
-import image from '../../assets/Ransomware.jpeg'
 import ServicesCard from '../Services-card'
 
 const ServicesList = [
   {
     id: 1,
     name: 'Application Security',
-    img: `${image}`,
+    img: 'https://static.wixstatic.com/media/f5b82e_12bb18c323c6434487cb79da30568429~mv2.jpeg',
     description: 'Content',
   },
   {
     id: 2,
     name: 'Network Security',
-    img: `${image}`,
+    img: 'https://static.wixstatic.com/media/f5b82e_12bb18c323c6434487cb79da30568429~mv2.jpeg',
     description: 'Content',
   },
   {
     id: 3,
     name: 'CERT-In Audit Services',
-    img: `${image}`,
+    img: 'https://static.wixstatic.com/media/f5b82e_12bb18c323c6434487cb79da30568429~mv2.jpeg',
     description: 'Content',
   },
 ]
