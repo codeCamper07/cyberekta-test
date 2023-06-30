@@ -1,16 +1,24 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background-color: gray;
+  padding: 10px;
+  background-color: rgb(227, 234, 241);
 }
+
 .contact-footer-section {
   display: flex;
+  align-items: baseline;
   gap: 30px;
 }
 .address {
   list-style: none;
+  padding-left: 0px;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .address-heading {
   font-size: 20px;
   font-weight: 600;
@@ -25,7 +33,7 @@
 }
 .content-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .login-form {
   display: flex;
@@ -38,4 +46,7 @@ a {
 }
 .legal-doc {
   text-align: center;
+}
+.links {
+  align-self: baseline;
 }

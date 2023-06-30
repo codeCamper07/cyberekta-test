@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
-import ContactMailRoundedIcon from '@mui/icons-material/ContactMailRounded'
+import EmailIcon from '@mui/icons-material/Email'
 import { Button, TextField } from '@mui/material'
 import './index.css'
 
@@ -21,32 +21,30 @@ class Footer extends Component {
           <h1>Contact</h1>
           <div className='content-section'>
             <div className='contact-footer-section'>
-              <div>
-                <ul className='address'>
-                  <div className='Icons'>
-                    <LocationOnIcon />
-                    <span className='address-heading'>Address</span>
-                  </div>
-                  <li>Telangana</li>
-                  <li>Andra Pradesh</li>
-                  <li>Bangaluru</li>
-                  <li>Chennai</li>
-                </ul>
-              </div>
-              <div>
+              <ul className='address'>
                 <div className='Icons'>
-                  <LocalPhoneIcon />
-                  <p className='phone-heading'>Phone </p>
-                  <span>: +91 99852 29237</span>
+                  <LocationOnIcon fontSize='medium' />
+                  <span className='address-heading'>Address</span>
+                </div>
+                <li>Telangana</li>
+                <li>Andra Pradesh</li>
+                <li>Bangaluru</li>
+                <li>Chennai</li>
+              </ul>
+              <div className='contact-info'>
+                <div className='Icons'>
+                  <LocalPhoneIcon fontSize='small' />
+                  <span className='phone-heading'>Phone: +91 99852 29237 </span>
                 </div>
                 <div className='Icons'>
-                  <ContactMailRoundedIcon />
-                  <span className='phone-heading'>Email</span>
-                  <span>: info@cyberekta.com</span>
+                  <EmailIcon fontSize='small' />
+                  <span className='phone-heading'>
+                    Email: info@cyberekta.com
+                  </span>
                 </div>
               </div>
             </div>
-            <div>
+            <div className='links'>
               <ul className='address'>
                 <h3>Links</h3>
                 <li>
