@@ -1,5 +1,5 @@
 import { Paper } from '@mui/material'
-import './index.css'
+import '../Carousel/index.css'
 
 const CarouselItems = (props) => {
   const { con } = props

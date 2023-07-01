@@ -1,4 +1,4 @@
-.card {
+.homecard {
   position: relative;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.content {
+.contents {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,16 +20,16 @@
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.content .heading {
+.contents .heading {
   font-weight: 700;
   font-size: 32px;
 }
 
-.content .para {
+.contents .para {
   line-height: 1.5;
 }
 
-.content .btn {
+.contents .btn {
   color: #e8e8e8;
   text-decoration: none;
   padding: 10px;
@@ -41,41 +41,41 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card::before {
+.homecard::before {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 5px;
-  height: 100%;
+  top: 0;
+  width: 100%;
+  height: 5px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   z-index: -1;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover::before {
-  width: 100%;
+.homecard:hover::before {
+  height: 100%;
 }
 
-.card:hover {
+.homecard:hover {
   box-shadow: none;
 }
 
-.card:hover .content {
+.homecard:hover .contents {
   color: #e8e8e8;
 }
 
-.card:hover .btn {
+.homecard:hover .btn {
   color: #212121;
   background: #e8e8e8;
 }
 
-.content .btn:hover {
+.contents .btn:hover {
   outline: 2px solid #e8e8e8;
   background: transparent;
   color: #e8e8e8;
 }
 
-.content .btn:active {
+.contents .btn:active {
   box-shadow: none;
 }

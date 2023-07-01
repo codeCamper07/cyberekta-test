@@ -1,14 +1,14 @@
-import './index.css'
+import '../Services-card/index.css'
 
 const ServicesCard = (props) => {
   const { cont } = props
-  const { name, img, description } = cont
+  const { name, description } = cont
   return (
-    <div className='card effect'>
-      <img className='service-images' src={img} alt='app-img' />
-      <div className='card-content'>
-        <h4>{name}</h4>
-        <p>{description}</p>
+    <div className='card '>
+      <div className='content'>
+        <p className='heading'>{name}</p>
+        <p className='para'>{description}</p>
+        <button class='btn'>Read more</button>
       </div>
     </div>
   )

@@ -4,3 +4,9 @@
   align-items: center;
   justify-content: center;
 }
+.course-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}

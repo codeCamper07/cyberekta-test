@@ -34,12 +34,14 @@ class Footer extends Component {
               <div className='contact-info'>
                 <div className='Icons'>
                   <LocalPhoneIcon fontSize='small' />
-                  <span className='phone-heading'>Phone: +91 99852 29237 </span>
+                  <span className='phone-heading'>
+                    Phone: <span className='con-val'> +91 99852 29237 </span>
+                  </span>
                 </div>
                 <div className='Icons'>
                   <EmailIcon fontSize='small' />
                   <span className='phone-heading'>
-                    Email: info@cyberekta.com
+                    Email: <span className='con-val'>info@cyberekta.com</span>
                   </span>
                 </div>
               </div>
