@@ -1,4 +1,5 @@
 .nav-bar-style {
+  position: relative;
   background-color: #e8e8e8;
   padding-left: 50px;
   padding-right: 50px;
@@ -18,21 +19,26 @@
   border-width: 0px;
 }
 .nav-mobile-items {
+  color: #e8e8e8;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: relative;
+  z-index: 1;
 }
 
 .mobile-nav {
   position: absolute;
   top: 103px;
   left: 0;
-  background-color: #e8e8e8;
+  background-color: #212121;
   width: 100%;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-mobile-items {
+  color: #e8e8e8;
 }
 
 @media (max-width: 675px) {

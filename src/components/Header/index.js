@@ -15,6 +15,7 @@ class Header extends Component {
 
   render() {
     const { mobileMenuActive } = this.state
+
     return (
       <>
         <div className='nav-bar-style'>
@@ -33,27 +34,27 @@ class Header extends Component {
               <nav className='mobile-nav'>
                 <ul className='nav-mobile-items'>
                   <li>
-                    <Link className='nav-items item' to='/services'>
+                    <Link className='nav-mobile-items item' to='/services'>
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link className='nav-items item' to='/solutions'>
+                    <Link className='nav-mobile-items item' to='/solutions'>
                       Solution
                     </Link>
                   </li>
                   <li>
-                    <Link className='nav-items item' to='/contactUs'>
+                    <Link className='nav-mobile-items item' to='/contactUs'>
                       Contact us
                     </Link>
                   </li>
                   <li>
-                    <Link className='nav-items item' to='/about'>
+                    <Link className='nav-mobile-items item' to='/about'>
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link className='nav-items item' to='/trainings'>
+                    <Link className='nav-mobile-items item' to='/trainings'>
                       Trainings
                     </Link>
                   </li>
