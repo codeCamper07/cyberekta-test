@@ -27,8 +27,10 @@
 
 .mobile-nav {
   position: fixed;
-  right: 0;
-  top: 70px;
+  float: right;
+  right: 30px;
+  left: 40px;
+  top: 80px;
   background-color: #e8e8e8;
   border-radius: 8px;
   padding: 10px;
