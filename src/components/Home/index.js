@@ -35,7 +35,7 @@ const serviceList = [
   },
   {
     id: 3,
-    main: 'Researchs',
+    main: 'Research',
     img: 'https://img.freepik.com/free-vector/work-office-computer-man-woman-business-character-marketing-online-employee-technology-business-man-cartoon-co-working-flat-design-freelance_1150-41790.jpg?w=1800&t=st=1687763682~exp=1687764282~hmac=8b4302d8f24304f710a88e0c215521da35d34e17b30d8d1cac0a3dce6d77d221',
     des: 'We work on next generation tools to address the latest and upcoming threat vectors, Know More!',
   },

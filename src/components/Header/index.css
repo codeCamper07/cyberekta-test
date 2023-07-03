@@ -6,6 +6,43 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.mobile-view {
+  display: none;
+}
+.desktop-view {
+  display: contents;
+}
+.menu-btn {
+  background: transparent;
+  border-width: 0px;
+}
+.nav-mobile-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.mobile-nav {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+@media (max-width: 675px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: contents;
+  }
+}
+
 .align-nav-items {
   list-style: none;
   display: flex;
