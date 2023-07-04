@@ -21,6 +21,24 @@ const CourseList = [
     description:
       'Cyber Security Basics to Advanced with Project Support or Certification',
   },
+  {
+    courseId: 4,
+    courseName: 'Cyber Security Boot Camp for MBA',
+    description:
+      'In the MBA studies with the Cybersecurity profile/specialization, candidate will learn about the directions of development of cyber threats faced by modern enterprises and institutions, as well as ways of dealing with such challenges.',
+  },
+  {
+    courseId: 5,
+    courseName: 'Graduate Certificate in Cyberpsychology',
+    description:
+      'Cyberpsychology is an introduction to the study of the psychological processes related to, and underlying, all aspects and features of technologically interconnected human behavior.',
+  },
+  {
+    courseId: 6,
+    courseName: 'Ethical Hacking',
+    description:
+      'Ethical hacking is a technology career with specific skills, and cybersecurity certifications help people break into the field. Many ethical hacking jobs still require a bachelors degree in information technology, or another technology or cybersecurity related degree.',
+  },
 ]
 
 class Trainings extends Component {

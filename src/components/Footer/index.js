@@ -68,7 +68,7 @@ class Footer extends Component {
                 <div>
                   <form className='login-form'>
                     <TextField
-                      sx={{ width: 300 }}
+                      className='form-input'
                       id='outlined-basic'
                       label='email'
                       type='email'
@@ -78,7 +78,7 @@ class Footer extends Component {
                       variant='outlined'
                     />
                     <Button
-                      sx={{ width: 120 }}
+                      className='form-btn'
                       type='submit'
                       variant='contained'>
                       Subscribe

@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <div>
         <Header />
-        <h1>Radha Krishna!</h1>
+        <h1>About</h1>
       </div>
     )
   }

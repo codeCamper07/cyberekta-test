@@ -54,3 +54,28 @@ a {
 .links {
   align-self: baseline;
 }
+
+.form-input {
+  width: 300px;
+}
+.form-btn {
+  width: 120px;
+}
+
+@media screen and (max-width: 675px) {
+  .form-input {
+    width: 170px;
+  }
+  .form-btn {
+    width: 90px;
+  }
+  .phone-heading {
+    font-size: 15px;
+  }
+  .con-val {
+    font-size: 12px;
+  }
+  .address-heading {
+    font-size: 15px;
+  }
+}
