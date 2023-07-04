@@ -70,12 +70,22 @@ a {
     width: 90px;
   }
   .phone-heading {
-    font-size: 15px;
+    font-size: 20px;
   }
   .con-val {
-    font-size: 12px;
+    font-size: 15px;
   }
   .address-heading {
+    font-size: 20px;
+  }
+  .contact-footer-section {
+    gap: 10px;
+  }
+  li {
     font-size: 15px;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
   }
 }

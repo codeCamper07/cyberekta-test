@@ -23,7 +23,7 @@ class Footer extends Component {
             <div className='contact-footer-section'>
               <ul className='address'>
                 <div className='Icons'>
-                  <LocationOnIcon fontSize='medium' />
+                  <LocationOnIcon fontSize='small' />
                   <span className='address-heading'>Address</span>
                 </div>
                 <li>Telangana</li>
@@ -48,7 +48,7 @@ class Footer extends Component {
             </div>
             <div className='links'>
               <ul className='address'>
-                <h3>Links</h3>
+                <h5>Links</h5>
                 <li>
                   <a href='/'>Home</a>
                 </li>
