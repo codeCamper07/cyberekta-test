@@ -22,21 +22,19 @@ import EthicalHacking from './components/Ethical-hacking'
 const App = () => (
   <Switch>
     <Route exact path='/' component={Home} />
-    <Route exact path='/contactUs' component={contactUs} />
-    <Route exact path='/services' component={Services} />
-    <Route exact path='/solutions' component={Solutions} />
-    <Route exact path='/about' component={About} />
-    <Route exact path='/trainings' component={Trainings} />
+    <Route path='/contactUs' component={contactUs} />
+    <Route path='/services' component={Services} />
+    <Route path='/solutions' component={Solutions} />
+    <Route path='/about' component={About} />
+    <Route path='/trainings' component={Trainings} />
     <Route exact path='/Azurein15days' component={Azure15} />
-    <Route exact path='/Azurein30days' component={Azure30} />
+    <Route path='/Azurein30days' component={Azure30} />
     <Route
-      exact
       path='/Cyber-security-training-program'
       component={CsTrainingProgram}
     />
     <Route exact path='/Cyber-security-boot-camp-for-MBA' component={CsMBA} />
     <Route
-      exact
       path='/Graduate-certificate-in-cyberpsychology'
       component={GcInCyberPsych}
     />

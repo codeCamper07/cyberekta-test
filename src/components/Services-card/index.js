@@ -8,7 +8,7 @@ const ServicesCard = (props) => {
       <div className='content'>
         <p className='heading'>{name}</p>
         <p className='para'>{description}</p>
-        <button class='btn'>Read more</button>
+        <button className='btn'>Read more</button>
       </div>
     </div>
   )

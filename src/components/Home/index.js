@@ -6,6 +6,7 @@ import Carousel from 'react-material-ui-carousel'
 import CarouselItems from '../Carousel'
 import Footer from '../Footer'
 import HomeCards from '../HomeCards'
+import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const items = [
   {
@@ -63,9 +64,11 @@ class Home extends Component {
               <br /> your Cyber worries!
             </h1>
             <div className='btn'>
-              <Button variant='contained' sx={{ fontSize: 10 }}>
-                Get Started
-              </Button>
+              <Link to='/services'>
+                <Button variant='contained' sx={{ fontSize: 10 }}>
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
