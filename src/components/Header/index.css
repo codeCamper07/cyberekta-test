@@ -30,7 +30,7 @@
 
 .mobile-nav {
   position: absolute;
-  top: 103px;
+  top: 133px;
   left: 0;
   background-color: #212121;
   width: 100%;
@@ -67,6 +67,6 @@
 }
 
 .logo-image {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 160px;
 }

@@ -9,41 +9,41 @@ const CourseList = [
     courseId: 1,
     courseName: 'Azure in 15 days',
     description: 'Learn Basics and Fundamentals of Cloud Computing',
-    path: '/Azurein15days',
+    path: '/trainings-Azurein15days',
   },
   {
     courseId: 2,
     courseName: 'Azure in 30 days',
     description: 'Learn Basics and Fundamentals with Lab Activities and Az-104',
-    path: '/Azurein30days',
+    path: '/trainings-Azurein30days',
   },
   {
     courseId: 3,
     courseName: 'Cyber Security Training Program',
     description:
       'Cyber Security Basics to Advanced with Project Support or Certification',
-    path: '/Cyber-security-training-program',
+    path: '/trainings-Cyber-security-training-program',
   },
   {
     courseId: 4,
     courseName: 'Cyber Security Boot Camp for MBA',
     description:
       'In the MBA studies with the Cybersecurity profile/specialization, candidate will learn about the directions of development of cyber threats faced by modern enterprises and institutions, as well as ways of dealing with such challenges.',
-    path: '/Cyber-security-boot-camp-for-MBA',
+    path: '/trainings-Cyber-security-boot-camp-for-MBA',
   },
   {
     courseId: 5,
     courseName: 'Graduate Certificate in Cyberpsychology',
     description:
       'Cyberpsychology is an introduction to the study of the psychological processes related to, and underlying, all aspects and features of technologically interconnected human behavior.',
-    path: '/Graduate-certificate-in-cyberpsychology',
+    path: '/trainings-Graduate-certificate-in-cyberpsychology',
   },
   {
     courseId: 6,
     courseName: 'Ethical Hacking',
     description:
       'Ethical hacking is a technology career with specific skills, and cybersecurity certifications help people break into the field. Many ethical hacking jobs still require a bachelors degree in information technology, or another technology or cybersecurity related degree.',
-    path: '/Ethical-hacking',
+    path: '/trainings-Ethical-hacking',
   },
 ]
 

@@ -27,18 +27,22 @@ const App = () => (
     <Route path='/solutions' component={Solutions} />
     <Route path='/about' component={About} />
     <Route path='/trainings' component={Trainings} />
-    <Route exact path='/Azurein15days' component={Azure15} />
-    <Route path='/Azurein30days' component={Azure30} />
+    <Route exact path='/trainings-Azurein15days' component={Azure15} />
+    <Route path='/trainings-Azurein30days' component={Azure30} />
     <Route
-      path='/Cyber-security-training-program'
+      path='/trainings-Cyber-security-training-program'
       component={CsTrainingProgram}
     />
-    <Route exact path='/Cyber-security-boot-camp-for-MBA' component={CsMBA} />
     <Route
-      path='/Graduate-certificate-in-cyberpsychology'
+      exact
+      path='/trainings-Cyber-security-boot-camp-for-MBA'
+      component={CsMBA}
+    />
+    <Route
+      path='/trainings-Graduate-certificate-in-cyberpsychology'
       component={GcInCyberPsych}
     />
-    <Route exact path='/Ethical-hacking' component={EthicalHacking} />
+    <Route exact path='/trainings-Ethical-hacking' component={EthicalHacking} />
     <Route exact path='/404-error' component={Error} />
     <Redirect to='/404-error' />
   </Switch>
