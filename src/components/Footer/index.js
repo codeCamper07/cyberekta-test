@@ -2,23 +2,14 @@ import { Component } from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import EmailIcon from '@mui/icons-material/Email'
-import { Button, TextField } from '@mui/material'
 import './index.css'
 
 class Footer extends Component {
-  state = { email: '' }
-
-  onChangeEmail = (event) => {
-    this.setState({ email: event.target.value })
-  }
-
   render() {
-    const { email } = this.state
-    console.log(email)
     return (
       <>
         <footer className='footer'>
-          <h1>Contact</h1>
+          <h1 className="contact" >Contact</h1>
           <div className='content-section'>
             <div className='contact-footer-section'>
               <ul className='address'>
@@ -31,6 +22,7 @@ class Footer extends Component {
                 <li>Bangaluru</li>
                 <li>Chennai</li>
               </ul>
+
               <div className='contact-info'>
                 <div className='Icons'>
                   <LocalPhoneIcon fontSize='small' />
@@ -45,7 +37,9 @@ class Footer extends Component {
                   </span>
                 </div>
               </div>
+
             </div>
+
             <div className='links'>
               <ul className='address'>
                 <h5>Links</h5>
@@ -63,30 +57,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div>
-              <div className='form-container'>
-                <div>
-                  <form className='login-form'>
-                    <TextField
-                      className='form-input'
-                      id='outlined-basic'
-                      label='email'
-                      type='email'
-                      value={email}
-                      placeholder='email@example.com'
-                      onChange={this.onChangeEmail}
-                      variant='outlined'
-                    />
-                    <Button
-                      className='form-btn'
-                      type='submit'
-                      variant='contained'>
-                      Subscribe
-                    </Button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div className='legal-doc'>
             <hr />
