@@ -5,7 +5,7 @@ const DaysList = (props) => {
   const { data } = props
   return (
     <div className='chrono-container'>
-      <Chrono mode='HORIZONTAL' items={data} cardWidth={365} />
+      <Chrono mode='HORIZONTAL' items={data} cardWidth={372} />
     </div>
   )
 }
