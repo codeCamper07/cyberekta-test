@@ -22,13 +22,13 @@ const CourseList = [
     courseName: 'Cyber Security Training Program (L1)',
     description:
       'Cyber Security Basics to Advanced with Project Support or Certification',
-    path: '/trainings-Cyber-security-training-program',
+    path: '/trainings-Cyber-security-training-program-L1',
   },
   {
     courseId: 4,
     courseName: 'Cyber Security Training Program (L2)',
     description: 'Cyber Security Advance with Project Support or Certification',
-    path: '/trainings-Cyber-security-training-program',
+    path: '/trainings-Cyber-security-training-program-L2',
   },
   {
     courseId: 5,

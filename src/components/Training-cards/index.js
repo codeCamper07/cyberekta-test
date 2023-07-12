@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom/cjs/react-router-dom'
 import '../Training-cards/index.css'
 
 const TrainingCards = (props) => {
@@ -10,9 +9,9 @@ const TrainingCards = (props) => {
       <div className='content'>
         <p className='heading'>{courseName}</p>
         <p className='para'>{description}</p>
-        <Link to={path}>
+        <a href={path}>
           <button className='btns'>Read more</button>
-        </Link>
+        </a>
       </div>
     </div>
   )

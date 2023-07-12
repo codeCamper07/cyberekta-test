@@ -53,7 +53,7 @@ class Footer extends Component {
                   <a href='/solutions'>Solutions</a>
                 </li>
                 <li>
-                  <a href='/tranings'>Trainings</a>
+                  <a href='/trainings'>Trainings</a>
                 </li>
               </ul>
             </div>

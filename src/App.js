@@ -30,7 +30,7 @@ const App = () => (
     <Route exact path='/trainings-Azurein15days' component={Azure15} />
     <Route path='/trainings-Azurein30days' component={Azure30} />
     <Route
-      path='/trainings-Cyber-security-training-program'
+      path='/trainings-Cyber-security-training-program-L1'
       component={CsTrainingProgram}
     />
     <Route
