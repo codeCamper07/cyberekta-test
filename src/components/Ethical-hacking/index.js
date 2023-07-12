@@ -2,7 +2,7 @@ import { Component } from 'react'
 import './index.css'
 import Header from '../Header'
 import Footer from '../Footer'
-import DaysList from '../Day2dayList1'
+import DaysList from '../Day2dayList'
 
 const EthicalList = [
   {
@@ -15,7 +15,7 @@ const EthicalList = [
       'Explain the motives, goals, and objectives of information security attacks',
       'Explain the classification of attacks',
       'Describe the information security attack vectors',
-      'Know about the information security laws and regulations.', 
+      'Know about the information security laws and regulations.',
     ],
   },
   {
@@ -68,7 +68,7 @@ const EthicalList = [
       'Describe insider threats',
       'Describe identity theft',
       'Apply social engineering countermeasures',
-      'Apply knowledge of insider threats and identity theft countermeasures',    
+      'Apply knowledge of insider threats and identity theft countermeasures',
     ],
   },
   {
@@ -83,9 +83,9 @@ const EthicalList = [
       'Use different DoS/DDoS attack tools',
       'Apply knowledge of DoS/DDoS attack countermeasures',
       'Implement different DoS/DDoS protection tools',
-      'Explain the session hijacking process and types of session hijacking',   
+      'Explain the session hijacking process and types of session hijacking',
       'Use different session hijacking tools',
-      'Apply knowledge of session-hijacking countermeasures', 
+      'Apply knowledge of session-hijacking countermeasures',
     ],
   },
   {
@@ -129,7 +129,6 @@ const EthicalList = [
       'Understand the importance of mobile device management (MDM)',
       'Adopt various mobile security countermeasures',
       'Use various mobile security tools',
-
     ],
   },
   {
@@ -180,7 +179,7 @@ class EthicalHacking extends Component {
         <Header />
         <div className='services-container'>
           <h1>Ethical Hacking</h1>
-          <DaysList data={EthicalList}/>
+          <DaysList data={EthicalList} />
           <button className='btns'>Add To Cart</button>
         </div>
         <Footer />
