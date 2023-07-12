@@ -1,16 +1,23 @@
+.contact{
+  padding-left: 100px; 
+}
 .footer {
   padding: 10px;
   background-color: rgb(227, 234, 241);
+
 }
 
 .contact-footer-section {
   display: flex;
   align-items: baseline;
   gap: 30px;
+  padding-left: 100px;  
 }
+
 .address {
   list-style: none;
   padding-left: 0px;
+ 
 }
 
 .contact-info {
@@ -23,10 +30,12 @@
   font-size: 20px;
   font-weight: 600;
 }
+
 .phone-heading {
   font-size: 20px;
   font-weight: 600;
 }
+
 .con-val {
   font-weight: 400;
 }
@@ -35,40 +44,32 @@
   display: flex;
   align-items: center;
 }
+
 .content-section {
   display: flex;
   justify-content: space-between;
 }
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .legal-doc {
   text-align: center;
 }
+
 .links {
-  align-self: baseline;
+  padding-right: 160px; 
+}
+.links h5{
+  font-size: 20px;
+  margin: 0;
 }
 
-.form-input {
-  width: 300px;
-}
-.form-btn {
-  width: 120px;
-}
 
 @media screen and (max-width: 675px) {
-  .form-input {
-    width: 170px;
-  }
-  .form-btn {
-    width: 90px;
-  }
+
   .phone-heading {
     font-size: 20px;
   }
