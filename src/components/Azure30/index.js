@@ -46,36 +46,27 @@ const Azure30List = [
       'Network security groups and Azure Firewall - The differences',
       'Azure Load Balancer and Application Gateway -  Overview',
       'VPN and ExpressRoute connectivity options - Overview',
-
     ],
   },
   {
     title: 'Day 5',
     cardTitle: 'Azure Firewall',
-    cardDetailedText: [
-      'Lab Activity',
-    ],
+    cardDetailedText: ['Lab Activity'],
   },
   {
     title: 'Day 6',
     cardTitle: 'Azure Load balancer',
-    cardDetailedText: [
-      'Lab Activity',
-    ],
+    cardDetailedText: ['Lab Activity'],
   },
   {
     title: 'Day 7',
     cardTitle: 'Azure App gateway',
-    cardDetailedText: [
-      'Lab Activity',
-    ],
+    cardDetailedText: ['Lab Activity'],
   },
   {
     title: 'Day 8',
     cardTitle: 'Azure VPN',
-    cardDetailedText: [
-      'Lab Activity',
-    ],
+    cardDetailedText: ['Lab Activity'],
   },
   {
     title: 'Day 9',
@@ -83,8 +74,8 @@ const Azure30List = [
     cardDetailedText: [
       'BLOBS, Tables, Files and Queues',
       'Shared access signatures',
-      'Azure storage Manager', 
-      'Securing Azure Storage account', 
+      'Azure storage Manager',
+      'Securing Azure Storage account',
       'Azure Storage replication options & BCDR',
     ],
   },
@@ -105,7 +96,7 @@ const Azure30List = [
     cardTitle: 'Azure Identity and Access Management (IAM) -  Entra part 2    ',
     cardDetailedText: [
       'SAML, OpenID Connect and Oauth',
-      'Onboarding SAAS based applications', 
+      'Onboarding SAAS based applications',
       'App registrations',
       'Enterprise applications',
       'Role assignment and custom roles',
@@ -131,9 +122,7 @@ const Azure30List = [
   {
     title: 'Day 14',
     cardTitle: ' Azure Backup and BCDR',
-    cardDetailedText: [
-      'Azure Backup and Azure Site Recovery',
-    ],
+    cardDetailedText: ['Azure Backup and Azure Site Recovery'],
   },
   {
     title: 'Day 15',
@@ -166,7 +155,7 @@ const Azure30List = [
       'Overview of Azure Governance',
       'Azure Policy and Initiative',
       'Azure Resource Manager Templates',
-      'Azure Blueprints',  
+      'Azure Blueprints',
     ],
   },
 
@@ -198,14 +187,12 @@ class Azure30 extends Component {
         <div className='services-container'>
           <h1>Azure in 30 days</h1>
           <DaysList data={Azure30List} />
-          <button className='btns'>Add To Cart</button>
+          <button className='btnss'>Add To Cart</button>
         </div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Azure30;
-
-
+export default Azure30

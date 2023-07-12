@@ -18,6 +18,7 @@ import CsTrainingProgram from './components/CS-Training-program'
 import CsMBA from './components/CS-MBA'
 import GcInCyberPsych from './components/GC-in-CyberPsych'
 import EthicalHacking from './components/Ethical-hacking'
+import Cart from './components/Cart'
 
 const App = () => (
   <Switch>
@@ -27,6 +28,7 @@ const App = () => (
     <Route path='/solutions' component={Solutions} />
     <Route path='/about' component={About} />
     <Route path='/trainings' component={Trainings} />
+    <Route path='/cart' component={Cart} />
     <Route exact path='/trainings-Azurein15days' component={Azure15} />
     <Route path='/trainings-Azurein30days' component={Azure30} />
     <Route
