@@ -89,6 +89,11 @@ class Header extends Component {
                   Trainings
                 </Link>
               </li>
+              <li>
+                <Link className='nav-items item' to='/cart'>
+                  Cart
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
