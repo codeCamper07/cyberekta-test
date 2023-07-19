@@ -160,6 +160,7 @@ const Azure15List = [
 
 class Azure15 extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
         <Header />
@@ -173,4 +174,5 @@ class Azure15 extends Component {
     )
   }
 }
+
 export default Azure15

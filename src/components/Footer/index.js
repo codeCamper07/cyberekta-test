@@ -9,7 +9,7 @@ class Footer extends Component {
     return (
       <>
         <footer className='footer'>
-          <h1 className="contact" >Contact</h1>
+          <h1 className='contact'>Contact</h1>
           <div className='content-section'>
             <div className='contact-footer-section'>
               <ul className='address'>
@@ -37,7 +37,6 @@ class Footer extends Component {
                   </span>
                 </div>
               </div>
-
             </div>
 
             <div className='links'>
@@ -57,15 +56,19 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            
           </div>
           <div className='legal-doc'>
             <hr />
             <p>
-              2022 by Cyber_ekta_Security Solutions pvt ltd
+              2023 by Cyber_ekta_Security Solutions pvt ltd
               <br />
               *A Cyber Security Company*
             </p>
+            <div className='policy-info'>
+              <a href='/privacy-policy'>Privacy Policy </a> \
+              <a href='/terms-and-conditions'> Terms & Conditions</a> \
+              <a href='/cancellation-and-refund'> Cancellation And Refund</a>
+            </div>
           </div>
         </footer>
       </>

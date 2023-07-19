@@ -1,23 +1,20 @@
-.contact{
-  padding-left: 100px; 
+.contact {
+  padding-left: 100px;
 }
 .footer {
   padding: 10px;
   background-color: rgb(227, 234, 241);
-
 }
 
 .contact-footer-section {
   display: flex;
   align-items: baseline;
   gap: 30px;
-  padding-left: 100px;  
+  padding-left: 100px;
 }
 
 .address {
   list-style: none;
-  padding-left: 0px;
- 
 }
 
 .contact-info {
@@ -60,16 +57,14 @@ a {
 }
 
 .links {
-  padding-right: 160px; 
+  padding-right: 160px;
 }
-.links h5{
+.links h5 {
   font-size: 20px;
   margin: 0;
 }
 
-
 @media screen and (max-width: 675px) {
-
   .phone-heading {
     font-size: 20px;
   }
@@ -79,7 +74,11 @@ a {
   .address-heading {
     font-size: 20px;
   }
+  .contact {
+    padding-left: 0px;
+  }
   .contact-footer-section {
+    padding-left: 0px;
     gap: 10px;
   }
   li {
@@ -89,4 +88,8 @@ a {
     display: flex;
     flex-direction: column;
   }
+}
+.policy-info {
+  display: flex;
+  justify-content: center;
 }

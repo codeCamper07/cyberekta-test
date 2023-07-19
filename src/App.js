@@ -19,6 +19,9 @@ import CsMBA from './components/CS-MBA'
 import GcInCyberPsych from './components/GC-in-CyberPsych'
 import EthicalHacking from './components/Ethical-hacking'
 import Cart from './components/Cart'
+import PrivacyPolicy from './components/Privacy Policy'
+import TermsAndConditions from './components/T&C'
+import CancellationAndRefund from './components/CancellationAndRefund'
 
 const App = () => (
   <Switch>
@@ -45,6 +48,9 @@ const App = () => (
       component={GcInCyberPsych}
     />
     <Route exact path='/trainings-Ethical-hacking' component={EthicalHacking} />
+    <Route path='/privacy-policy' component={PrivacyPolicy} />
+    <Route path='/terms-and-conditions' component={TermsAndConditions} />
+    <Route path='/cancellation-and-refund' component={CancellationAndRefund} />
     <Route exact path='/404-error' component={Error} />
     <Redirect to='/404-error' />
   </Switch>

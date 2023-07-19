@@ -1,0 +1,12 @@
+.table {
+  border: 2px solid forestgreen;
+  width: 70vw;
+}
+th {
+  border-bottom: 1px solid #212121;
+}
+
+td {
+  text-align: center;
+  padding-top: 30px;
+}

@@ -10,12 +10,14 @@ const CourseList = [
     courseName: 'Azure in 15 days',
     description: 'Learn Basics and Fundamentals of Cloud Computing',
     path: '/trainings-Azurein15days',
+    price: 2000,
   },
   {
     courseId: 2,
     courseName: 'Azure in 30 days',
     description: 'Learn Basics and Fundamentals with Lab Activities and Az-104',
     path: '/trainings-Azurein30days',
+    price: 2000,
   },
   {
     courseId: 3,
@@ -23,12 +25,14 @@ const CourseList = [
     description:
       'Cyber Security Basics to Advanced with Project Support or Certification',
     path: '/trainings-Cyber-security-training-program-L1',
+    price: 2000,
   },
   {
     courseId: 4,
     courseName: 'Cyber Security Training Program (L2)',
     description: 'Cyber Security Advance with Project Support or Certification',
     path: '/trainings-Cyber-security-training-program-L2',
+    price: 2000,
   },
   {
     courseId: 5,
@@ -36,6 +40,7 @@ const CourseList = [
     description:
       'In the MBA studies with the Cybersecurity profile/specialization, candidate will learn about the directions of development of cyber threats faced by modern enterprises and institutions, as well as ways of dealing with such challenges.',
     path: '/trainings-Cyber-security-boot-camp-for-MBA',
+    price: 2000,
   },
   {
     courseId: 6,
@@ -43,6 +48,7 @@ const CourseList = [
     description:
       'Cyberpsychology is an introduction to the study of the psychological processes related to, and underlying, all aspects and features of technologically interconnected human behavior.',
     path: '/trainings-Graduate-certificate-in-cyberpsychology',
+    price: 2000,
   },
   {
     courseId: 7,
@@ -50,6 +56,7 @@ const CourseList = [
     description:
       'Ethical hacking is a technology career with specific skills, and cybersecurity certifications help people break into the field. Many ethical hacking jobs still require a bachelors degree in information technology, or another technology or cybersecurity related degree.',
     path: '/trainings-Ethical-hacking',
+    price: 2000,
   },
 ]
 
@@ -72,4 +79,5 @@ class Trainings extends Component {
     )
   }
 }
+
 export default Trainings

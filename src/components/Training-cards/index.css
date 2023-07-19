@@ -79,3 +79,7 @@
 .content .btns:active {
   box-shadow: none;
 }
+.btn-containers {
+  display: flex;
+  gap: 20px;
+}
