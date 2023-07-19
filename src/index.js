@@ -2,14 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
+import { Provider } from 'react-redux'
+import { legacy_createStore as createStore } from 'redux'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min'
+import rootReducer from './Reducers/rootReducer'
+
+const myStore = createStore(rootReducer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Provider store={myStore}>
+        <App />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>,
 )
