@@ -187,7 +187,6 @@ class Azure30 extends Component {
         <div className='services-container'>
           <h1>Azure in 30 days</h1>
           <DaysList data={Azure30List} />
-          <button className='btnss'>Add To Cart</button>
         </div>
         <Footer />
       </div>
