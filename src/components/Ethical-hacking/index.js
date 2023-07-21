@@ -180,7 +180,6 @@ class EthicalHacking extends Component {
         <div className='services-container'>
           <h1>Ethical Hacking</h1>
           <DaysList data={EthicalList} />
-          <button className='btnss'>Add To Cart</button>
         </div>
         <Footer />
       </div>
