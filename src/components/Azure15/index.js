@@ -166,7 +166,7 @@ class Azure15 extends Component {
         <Header />
         <div className='services-container'>
           <h1>Azure in 15 days</h1>
-          <DaysList data={Azure15List} />ß
+          <DaysList data={Azure15List} />
         </div>
         <Footer />
       </div>
