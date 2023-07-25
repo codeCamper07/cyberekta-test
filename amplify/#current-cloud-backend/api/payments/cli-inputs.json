@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/payment": {
+      "name": "/payment",
+      "lambdaFunction": "cyberekta8600045b",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

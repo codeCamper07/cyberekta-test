@@ -1,0 +1,70 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberekta-payment-155333-authRole",
+      "UnauthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-payment-155333-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-payment-155333-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-cyberekta-payment-155333-deployment",
+      "UnauthRoleName": "amplify-cyberekta-payment-155333-unauthRole",
+      "StackName": "amplify-cyberekta-payment-155333",
+      "StackId": "arn:aws:cloudformation:ap-south-1:161323219811:stack/amplify-cyberekta-payment-155333/4faf8e50-2ad5-11ee-9517-0a604b1bd3c8",
+      "AmplifyAppId": "d2tpvnb77v10t9"
+    }
+  },
+  "api": {
+    "payments": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cyberekta8600045b"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cyberekta-payment-155333-deployment/amplify-cfn-templates/api/payments-cloudformation-template.json",
+        "logicalId": "apipayments"
+      },
+      "lastPushTimeStamp": "2023-07-25T10:27:16.952Z",
+      "output": {
+        "ApiName": "payments",
+        "RootUrl": "https://bf1q73k6bk.execute-api.ap-south-1.amazonaws.com/payment",
+        "ApiId": "bf1q73k6bk"
+      },
+      "lastPushDirHash": "sMG3L4UstQhI8pTcOem7M9giIXU="
+    }
+  },
+  "function": {
+    "cyberekta8600045b": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-07-25T10:25:09.802Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-07-25T10:25:10.652Z",
+      "distZipFilename": "cyberekta8600045b-68384a626d7a4d694162-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-cyberekta-payment-155333-deployment",
+        "s3Key": "amplify-builds/cyberekta8600045b-68384a626d7a4d694162-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cyberekta-payment-155333-deployment/amplify-cfn-templates/function/cyberekta8600045b-cloudformation-template.json",
+        "logicalId": "functioncyberekta8600045b"
+      },
+      "lastPushTimeStamp": "2023-07-25T10:27:16.952Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::161323219811:role/cyberektaLambdaRoleb6897a1a-payment",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:161323219811:function:cyberekta8600045b-payment",
+        "Name": "cyberekta8600045b-payment",
+        "LambdaExecutionRole": "cyberektaLambdaRoleb6897a1a-payment"
+      },
+      "lastPushDirHash": "WDBcWubf+0FHqfvNjvqEdLXzifQ="
+    }
+  }
+}

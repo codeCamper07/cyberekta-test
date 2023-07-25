@@ -1,0 +1,50 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberekta-dev-202757-authRole",
+      "UnauthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-dev-202757-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-dev-202757-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-cyberekta-dev-202757-deployment",
+      "UnauthRoleName": "amplify-cyberekta-dev-202757-unauthRole",
+      "StackName": "amplify-cyberekta-dev-202757",
+      "StackId": "arn:aws:cloudformation:ap-south-1:161323219811:stack/amplify-cyberekta-dev-202757/7bae5ca0-2a32-11ee-af51-024c8cd7537c",
+      "AmplifyAppId": "d2tpvnb77v10t9"
+    },
+    "categories": {
+      "function": {
+        "cyberekta8600045b": {
+          "deploymentBucketName": "amplify-cyberekta-dev-202757-deployment",
+          "s3Key": "amplify-builds/cyberekta8600045b-68384a626d7a4d694162-build.zip"
+        }
+      },
+      "api": {
+        "payments": {}
+      }
+    }
+  },
+  "payment": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberekta-payment-155333-authRole",
+      "UnauthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-payment-155333-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberekta-payment-155333-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-cyberekta-payment-155333-deployment",
+      "UnauthRoleName": "amplify-cyberekta-payment-155333-unauthRole",
+      "StackName": "amplify-cyberekta-payment-155333",
+      "StackId": "arn:aws:cloudformation:ap-south-1:161323219811:stack/amplify-cyberekta-payment-155333/4faf8e50-2ad5-11ee-9517-0a604b1bd3c8",
+      "AmplifyAppId": "d2tpvnb77v10t9"
+    },
+    "categories": {
+      "function": {
+        "cyberekta8600045b": {
+          "deploymentBucketName": "amplify-cyberekta-payment-155333-deployment",
+          "s3Key": "amplify-builds/cyberekta8600045b-68384a626d7a4d694162-build.zip"
+        }
+      },
+      "api": {
+        "payments": {}
+      }
+    }
+  }
+}
