@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/create/orderId": {
+      "name": "/create/orderId",
+      "lambdaFunction": "cyberektapro1d789a0d",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/verification": {
+      "name": "/verification",
+      "lambdaFunction": "cyberektaproc1f9e71f",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

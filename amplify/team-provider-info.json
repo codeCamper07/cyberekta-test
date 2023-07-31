@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberektapro-dev-191558-authRole",
+      "UnauthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberektapro-dev-191558-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::161323219811:role/amplify-cyberektapro-dev-191558-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-cyberektapro-dev-191558-deployment",
+      "UnauthRoleName": "amplify-cyberektapro-dev-191558-unauthRole",
+      "StackName": "amplify-cyberektapro-dev-191558",
+      "StackId": "arn:aws:cloudformation:ap-south-1:161323219811:stack/amplify-cyberektapro-dev-191558/408091b0-2e16-11ee-aecc-0a0c282c2532",
+      "AmplifyAppId": "d3ad76f7pja5kq"
+    },
+    "categories": {
+      "function": {
+        "cyberektapro1d789a0d": {
+          "deploymentBucketName": "amplify-cyberektapro-dev-191558-deployment",
+          "s3Key": "amplify-builds/cyberektapro1d789a0d-47676375513857566531-build.zip"
+        },
+        "cyberektaproc1f9e71f": {
+          "deploymentBucketName": "amplify-cyberektapro-dev-191558-deployment",
+          "s3Key": "amplify-builds/cyberektaproc1f9e71f-413232456b6e63515639-build.zip"
+        }
+      },
+      "api": {
+        "coursepayments": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3ad76f7pja5kq",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

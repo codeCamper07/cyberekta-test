@@ -1,0 +1,28 @@
+.services-section {
+  display: flex;
+  flex-direction: column;
+}
+.main-banner {
+  background-color: slateblue;
+  padding: 35px;
+}
+.main-banner :nth-child(1) {
+  color: #e8e8e8;
+}
+.main-banner :nth-child(2) {
+  font-size: 16px;
+  color: #e8e8e8;
+  text-align: center;
+}
+.main-banner :nth-child(3) {
+  text-align: center;
+}
+.services-offered-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+}

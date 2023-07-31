@@ -1,0 +1,14 @@
+.policy-header-container {
+  background-image: linear-gradient(to right, #647dee, #7f53ac);
+  color: #e8e8e8;
+  padding: 25px;
+}
+.policy-header-container :nth-child(2) {
+  font-size: 20px;
+}
+.policy-heading {
+  font-size: 50px;
+}
+.policy-content-container {
+  padding: 30px;
+}

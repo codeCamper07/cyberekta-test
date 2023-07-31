@@ -1,0 +1,95 @@
+{
+  "api": {
+    "coursepayments": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cyberektapro1d789a0d"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cyberektaproc1f9e71f"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "cyberektapro1d789a0d": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "cyberektaproc1f9e71f": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_cyberektapro1d789a0d_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cyberektapro1d789a0d"
+        }
+      ]
+    },
+    "AMPLIFY_function_cyberektapro1d789a0d_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cyberektapro1d789a0d"
+        }
+      ]
+    },
+    "AMPLIFY_function_cyberektaproc1f9e71f_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cyberektaproc1f9e71f"
+        }
+      ]
+    },
+    "AMPLIFY_function_cyberektaproc1f9e71f_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cyberektaproc1f9e71f"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    }
+  }
+}
