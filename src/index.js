@@ -7,10 +7,6 @@ import { legacy_createStore as createStore } from 'redux'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min'
 import rootReducer from './Reducers/rootReducer'
-import { Amplify } from 'aws-amplify'
-import awsmobile from './aws-exports'
-
-Amplify.configure(awsmobile)
 
 const myStore = createStore(rootReducer)
 
