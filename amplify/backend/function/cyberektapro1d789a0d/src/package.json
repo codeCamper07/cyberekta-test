@@ -8,7 +8,9 @@
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "razorpay": "^2.9.1"
+    "https": "^1.0.0",
+    "razorpay": "^2.9.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92"

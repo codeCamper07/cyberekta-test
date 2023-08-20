@@ -15,11 +15,11 @@
       "function": {
         "cyberektapro1d789a0d": {
           "deploymentBucketName": "amplify-cyberektapro-dev-191558-deployment",
-          "s3Key": "amplify-builds/cyberektapro1d789a0d-47676375513857566531-build.zip"
+          "s3Key": "amplify-builds/cyberektapro1d789a0d-6c6e6e6470302f446d5a-build.zip"
         },
         "cyberektaproc1f9e71f": {
           "deploymentBucketName": "amplify-cyberektapro-dev-191558-deployment",
-          "s3Key": "amplify-builds/cyberektaproc1f9e71f-413232456b6e63515639-build.zip"
+          "s3Key": "amplify-builds/cyberektaproc1f9e71f-564344736b665a454963-build.zip"
         }
       },
       "api": {

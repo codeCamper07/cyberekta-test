@@ -9,8 +9,9 @@ See the License for the specific language governing permissions and limitations 
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
-//const PaytmChecksum = require('./PaytmChecksum')
-const Razorpay = require('razorpay')
+const PaytmChecksum = require('./PaytmChecksum')
+const https = require('https')
+const { v4: uuidv4 } = require('uuid')
 
 // declare a new express app
 const app = express()
@@ -24,20 +25,77 @@ app.use(function (req, res, next) {
   next()
 })
 
-var instance = new Razorpay({
-  key_id: 'rzp_test_z1knXzTq5LfW7g',
-  key_secret: 'rNGdlJgFDD9GK6ENBY2pg9kr',
-})
-
 app.post('/create/orderId', function (req, res) {
-  const { price } = req.body
-  var options = {
-    amount: price * 100, // amount in the smallest currency unit
-    currency: 'INR',
-    receipt: 'rcptid_14',
+  const { totalAmount, email, username, phone } = req.body
+  const finalPrice = JSON.stringify(totalAmount + 12.05)
+  let orders = 'ORDERID' + new Date().getTime()
+  let MID = 'giuhHI37769552592572'
+
+  var paytmParams = {}
+
+  paytmParams.body = {
+    requestType: 'Payment',
+    mid: MID,
+    websiteName: 'WEBSTAGING',
+    orderId: orders,
+    callbackUrl:
+      'https://feynw9kv0e.execute-api.ap-south-1.amazonaws.com/dev/verification',
+    txnAmount: {
+      value: finalPrice,
+      currency: 'INR',
+    },
+    userInfo: {
+      custId: 'CUST' + new Date().getTime(),
+      name: username,
+      email,
+      mobileNumber: phone,
+    },
   }
-  instance.orders.create(options, (err, order) => {
-    res.send({ order })
+  /**
+   * Generate checksum by parameters we have
+   * Find your Merchant Key in your Paytm Dashboard at https://dashboard.paytm.com/next/apikeys
+   */
+
+  PaytmChecksum.generateSignature(
+    JSON.stringify(paytmParams.body),
+    'wySKJOYSFSWZGeSK',
+  ).then(function (checksum) {
+    paytmParams.head = {
+      signature: checksum,
+    }
+
+    var post_data = JSON.stringify(paytmParams)
+
+    var options = {
+      /* for Staging */
+      hostname: 'securegw-stage.paytm.in',
+
+      /* for Production */
+      // hostname: 'securegw.paytm.in',
+
+      port: 443,
+      path: `/theia/api/v1/initiateTransaction?mid=${MID}&orderId=${orders}`,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': post_data.length,
+      },
+    }
+
+    var response = ''
+    var post_req = https.request(options, function (post_res) {
+      post_res.on('data', function (chunk) {
+        response += chunk
+      })
+
+      post_res.on('end', function () {
+        console.log('Response: ', response)
+        res.send({ response, paytmParams })
+      })
+    })
+
+    post_req.write(post_data)
+    post_req.end()
   })
 })
 

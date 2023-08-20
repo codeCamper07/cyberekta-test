@@ -9,7 +9,8 @@ See the License for the specific language governing permissions and limitations 
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
-//const PaytmChecksum = require('./PaytmChecksum')
+const PaytmChecksum = require('./PaytmChecksum')
+const { parse } = require('querystring')
 //const https = require('https')
 //const formidable = require('formidable')
 
@@ -19,34 +20,42 @@ app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
 // Enable CORS for all methods
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', '*')
+  next()
+})
 
+app.get('/paymentStatus', (req, res) => {
+  res.send('hello world!')
+})
 /**********************
  * Example get method *
  **********************/
 
-app.post('/verification', function (req, res) {
-  const secret = 'cyberekta111'
-  console.log(req.body)
+app.post('/verification', (req, res) => {
+  let body = ''
+  req.on('data', (chunk) => {
+    body += chunk.toString()
+  })
+  req.on('end', () => {
+    var postbodyjson = parse(body)
+    postbodyjson = JSON.parse(JSON.stringify(postbodyjson))
 
-  const crypto = require('crypto')
+    var checksum = postbodyjson.CHECKSUMHASH
+    delete postbodyjson['CHECKSUMHASH']
 
-  const shasum = crypto.createHmac('sha256', secret)
-  shasum.update(JSON.stringify(req.body))
-  const digest = shasum.digest('hex')
-
-  console.log(digest, req.headers['x-razorpay-signature'])
-
-  if (digest === req.headers['x-razorpay-signature']) {
-    console.log('request is legit')
-    // process it
-    require('fs').writeFileSync(
-      'payment1.json',
-      JSON.stringify(req.body, null, 4),
+    var verifyChecksum = PaytmChecksum.verifySignature(
+      postbodyjson,
+      'wySKJOYSFSWZGeSK',
+      checksum,
     )
-  } else {
-    // pass it
-  }
-  res.json({ status: 'ok' })
+    if (verifyChecksum) {
+      res.send(postbodyjson)
+    } else {
+      res.send(postbodyjson)
+    }
+  })
 })
 
 app.listen(4000, function () {

@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/paymentStatus": {
+      "name": "/paymentStatus",
+      "lambdaFunction": "cyberektaproc1f9e71f",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

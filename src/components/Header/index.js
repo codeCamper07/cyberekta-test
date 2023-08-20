@@ -58,6 +58,11 @@ class Header extends Component {
                       Trainings
                     </Link>
                   </li>
+                  <li>
+                    <Link className='nav-mobile-items item' to='/cart'>
+                      Cart
+                    </Link>
+                  </li>
                 </ul>
               </nav>
             )}

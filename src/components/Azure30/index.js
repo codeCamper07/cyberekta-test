@@ -49,24 +49,14 @@ const Azure30List = [
     ],
   },
   {
-    title: 'Day 5',
-    cardTitle: 'Azure Firewall',
-    cardDetailedText: ['Lab Activity'],
-  },
-  {
-    title: 'Day 6',
-    cardTitle: 'Azure Load balancer',
-    cardDetailedText: ['Lab Activity'],
-  },
-  {
-    title: 'Day 7',
-    cardTitle: 'Azure App gateway',
-    cardDetailedText: ['Lab Activity'],
-  },
-  {
-    title: 'Day 8',
-    cardTitle: 'Azure VPN',
-    cardDetailedText: ['Lab Activity'],
+    title: 'Day 5-8',
+    cardTitle: 'Azure Lab Activity',
+    cardDetailedText: [
+      'Azure Firewall',
+      'Azure Load balancer',
+      'Azure App gateway',
+      'Azure VPN',
+    ],
   },
   {
     title: 'Day 9',
