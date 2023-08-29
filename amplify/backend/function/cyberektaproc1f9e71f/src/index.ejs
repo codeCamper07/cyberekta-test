@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Transaction Information</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-top: 0;
+        color: #333333;
+      }
+      p {
+        color: #666666;
+      }
+      .transaction-details {
+        margin-top: 20px;
+        border-top: 1px solid #dddddd;
+        padding-top: 10px;
+      }
+      .transaction-property {
+        font-weight: bold;
+        color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment Transaction Information</h1>
+      <p>Below are the details of your recent payment transaction:</p>
+      <div class="transaction-details">
+        <p>
+          <span class="transaction-property">Transaction ID:</span> <%= txnId%>
+        </p>
+        <p><span class="transaction-property">Date:</span> <%= txnDate%></p>
+        <p><span class="transaction-property">Amount:</span> <%= amount%></p>
+        <p><span class="transaction-property">Status:</span> <%= message%></p>
+        <p><span class="transaction-property">Order ID:</span> <%= order%></p>
+        <p>
+          <span class="transaction-property">Bank Name:</span> <%= bankName%>
+        </p>
+        <p>
+          <span class="transaction-property">Bank Txn Id:</span> <%= bankTxn%>
+        </p>
+        <!-- Add more transaction details here -->
+      </div>
+      <p>
+        If you have any questions or concerns, please contact our support team.
+      </p>
+    </div>
+  </body>
+</html>

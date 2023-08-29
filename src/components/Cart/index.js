@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './index.css'
 import Header from '../Header'
-import Footer from '../Footer'
 import { useDispatch, useSelector } from 'react-redux'
 import { CheckoutProvider, Checkout } from 'paytm-blink-checkout-react'
 import CONFIG from '../Config'
@@ -217,7 +216,6 @@ const Cart = () => {
           <p>Cart is empty</p>
         )}
       </div>
-      <Footer />
     </>
   )
 }

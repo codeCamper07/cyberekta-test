@@ -18,6 +18,8 @@ const { parse } = require('querystring')
 const app = express()
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
+app.set('view engine', 'ejs')
+app.set('views', __dirname)
 
 // Enable CORS for all methods
 app.use(function (req, res, next) {
@@ -51,7 +53,17 @@ app.post('/verification', (req, res) => {
       checksum,
     )
     if (verifyChecksum) {
-      res.send(postbodyjson)
+      const data = {
+        title: postbodyjson.STATUS,
+        message: postbodyjson.RESPMSG,
+        amount: postbodyjson.TXNAMOUNT,
+        txnId: postbodyjson.TXNID,
+        txnDate: postbodyjson.TXNDATE,
+        order: postbodyjson.ORDERID,
+        bankName: postbodyjson.BANKNAME,
+        bankTxn: postbodyjson.BANKTXNID,
+      }
+      res.render('index', data)
     } else {
       res.send(postbodyjson)
     }
