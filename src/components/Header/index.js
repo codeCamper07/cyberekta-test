@@ -24,7 +24,9 @@ function Header() {
   }
 
   return (
-    <AppBar position='static'>
+    <AppBar
+      sx={{ backgroundColor: '#e8e8e8', color: 'black' }}
+      position='static'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -52,7 +54,7 @@ function Header() {
               aria-controls='menu-appbar'
               aria-haspopup='true'
               onClick={handleOpenNavMenu}
-              color='inherit'>
+              color='black'>
               <MenuIcon />
             </IconButton>
             <Menu
@@ -120,48 +122,48 @@ function Header() {
               color: 'inherit',
               textDecoration: 'none',
             }}>
-            LOGO
+            CyberEkta
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Link to='/solutions'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 Solutions
               </Button>
             </Link>
             <Link to='/services'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 Services
               </Button>
             </Link>
             <Link to='/contactUs'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 Contact us
               </Button>
             </Link>
             <Link to='/about'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 About
               </Button>
             </Link>
             <Link to='/trainings'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 Trainings
               </Button>
             </Link>
             <Link to='/cart'>
               <Button
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}>
+                sx={{ my: 2, color: 'black', display: 'block' }}>
                 Cart
               </Button>
             </Link>
