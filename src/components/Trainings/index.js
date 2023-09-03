@@ -65,7 +65,6 @@ class Trainings extends Component {
     return (
       <div>
         <Header />
-        <hr />
         <div className='trainings-container'>
           <h1>Trainings</h1>
           <div className='course-cards'>

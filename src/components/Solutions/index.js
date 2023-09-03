@@ -15,7 +15,6 @@ class Solutions extends Component {
     return (
       <div>
         <Header />
-        <hr />
         <div className='services-offered-section'>
           <ServicesCard key={1} cont={Sol} />
         </div>

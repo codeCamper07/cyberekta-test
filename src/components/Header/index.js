@@ -1,109 +1,174 @@
-import { Component } from 'react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close'
-import './index.css'
+import Container from '@mui/material/Container'
+import Button from '@mui/material/Button'
+import MenuItem from '@mui/material/MenuItem'
+import AdbIcon from '@mui/icons-material/Adb'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
-class Header extends Component {
-  state = { mobileMenuActive: false }
+function Header() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null)
 
-  menuToggle = () => {
-    this.setState((prevState) => ({
-      mobileMenuActive: !prevState.mobileMenuActive,
-    }))
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget)
   }
 
-  render() {
-    const { mobileMenuActive } = this.state
-
-    return (
-      <>
-        <div className='nav-bar-style'>
-          <a href='/'>
-            <img
-              className='logo-image'
-              src='https://static.wixstatic.com/media/f5b82e_19d46c131f714e3d95a79c728fe8b8e3~mv2.png'
-              alt='logo'
-            />
-          </a>
-          <div className='mobile-view'>
-            <button className='menu-btn' onClick={this.menuToggle}>
-              {mobileMenuActive ? <CloseIcon /> : <MenuIcon />}
-            </button>
-            {mobileMenuActive && (
-              <nav className='mobile-nav'>
-                <ul className='nav-mobile-items'>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/services'>
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/solutions'>
-                      Solution
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/contactUs'>
-                      Contact us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/about'>
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/trainings'>
-                      Trainings
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className='nav-mobile-items item' to='/cart'>
-                      Cart
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            )}
-          </div>
-          <nav className='desktop-view'>
-            <ul className='align-nav-items'>
-              <li>
-                <Link className='nav-items item' to='/services'>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link className='nav-items item' to='/solutions'>
-                  Solution
-                </Link>
-              </li>
-              <li>
-                <Link className='nav-items item' to='/contactUs'>
-                  Contact us
-                </Link>
-              </li>
-              <li>
-                <Link className='nav-items item' to='/about'>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className='nav-items item' to='/trainings'>
-                  Trainings
-                </Link>
-              </li>
-              <li>
-                <Link className='nav-items item' to='/cart'>
-                  Cart
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </>
-    )
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null)
   }
+
+  return (
+    <AppBar position='static'>
+      <Container maxWidth='xl'>
+        <Toolbar disableGutters>
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Typography
+            variant='h6'
+            noWrap
+            component='a'
+            href='/'
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}>
+            CyberEkta
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size='large'
+              aria-label='account of current user'
+              aria-controls='menu-appbar'
+              aria-haspopup='true'
+              onClick={handleOpenNavMenu}
+              color='inherit'>
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id='menu-appbar'
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/solutions'>
+                  <Typography textAlign='center'>Solutions</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/services'>
+                  <Typography textAlign='center'>Services</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/contactUs'>
+                  <Typography textAlign='center'>Contact us</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/about'>
+                  <Typography textAlign='center'>About</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/trainings'>
+                  <Typography textAlign='center'>Trainings</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to='/cart'>
+                  <Typography textAlign='center'>Cart</Typography>
+                </Link>
+              </MenuItem>
+            </Menu>
+          </Box>
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Typography
+            variant='h5'
+            noWrap
+            component='a'
+            href='/'
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}>
+            LOGO
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Link to='/solutions'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                Solutions
+              </Button>
+            </Link>
+            <Link to='/services'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                Services
+              </Button>
+            </Link>
+            <Link to='/contactUs'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                Contact us
+              </Button>
+            </Link>
+            <Link to='/about'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                About
+              </Button>
+            </Link>
+            <Link to='/trainings'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                Trainings
+              </Button>
+            </Link>
+            <Link to='/cart'>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}>
+                Cart
+              </Button>
+            </Link>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  )
 }
 export default Header
