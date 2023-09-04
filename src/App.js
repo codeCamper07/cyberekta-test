@@ -32,7 +32,7 @@ const App = () => (
     <Route path='/about' component={About} />
     <Route path='/trainings' component={Trainings} />
     <Route path='/cart' component={Cart} />
-    <Route exact path='/trainings-Azurein15days' component={Azure15} />
+    <Route path='/trainings-Azurein15days' component={Azure15} />
     <Route path='/trainings-Azurein30days' component={Azure30} />
     <Route
       path='/trainings-Cyber-security-training-program-L1'

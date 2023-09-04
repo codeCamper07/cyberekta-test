@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import '../Training-cards/index.css'
 import { useDispatch } from 'react-redux'
 
@@ -18,9 +19,9 @@ const TrainingCards = (props) => {
         <p className='heading'>{courseName}</p>
         <p className='para'>{description}</p>
         <div className='btn-containers'>
-          <a href={path}>
+          <Link to={`${path}`}>
             <button className='btns'>Read more</button>
-          </a>
+          </Link>
           <button
             className='btns'
             type='submit'
