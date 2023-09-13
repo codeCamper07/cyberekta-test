@@ -18,23 +18,9 @@ const notifyMerchantHandler = (eventType, data) => {
 }
 
 const Cart = () => {
-  const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
   const [mConfig, setMConfig] = useState(appendHandler(CONFIG))
   const [showCheckout, setShowCheckout] = useState(false)
   const [checkoutJsInstance, setCheckoutJsInstance] = useState(null)
-
-  const onChangeUsername = (event) => {
-    setUsername(event.target.value)
-  }
-
-  const onChangeEmail = (event) => {
-    setEmail(event.target.value)
-  }
-  const onChangePhone = (event) => {
-    setPhone(event.target.value)
-  }
 
   let totalPrice = 0
   const products = useSelector((state) => state.products)
@@ -104,9 +90,6 @@ const Cart = () => {
     event.preventDefault()
     getPaymentData({
       totalAmount: totalPrice,
-      email,
-      username,
-      phone,
     }).then((response) => {
       console.log(response)
       const newData = `${response.response}`
@@ -116,11 +99,6 @@ const Cart = () => {
         amount: response.paytmParams.body.txnAmount.value,
         token: converted.body.txnToken,
         tokenType: 'TXN_TOKEN',
-        userDetail: {
-          mobileNumber: phone,
-          name: username,
-          email,
-        },
       }
       console.log(mConfig)
       loadCheckoutScript()
@@ -151,28 +129,8 @@ const Cart = () => {
           <div className='cart-container'>
             <div className='section_form'>
               <form id='consultation-form' className='feed-form'>
-                <input
-                  placeholder='Name'
-                  type='text'
-                  onChange={onChangeUsername}
-                  value={username}
-                />
-                <input
-                  name='phone'
-                  placeholder='Phone number'
-                  onChange={onChangePhone}
-                  value={phone}
-                />
-                <input
-                  onChange={onChangeEmail}
-                  value={email}
-                  name='email'
-                  required=''
-                  placeholder='E-mail'
-                  type='email'
-                />
                 <button className='button_submit' onClick={handlePayment}>
-                  ORDER
+                  PAY
                 </button>
               </form>
             </div>
